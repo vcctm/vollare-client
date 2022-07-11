@@ -1,14 +1,15 @@
-import Main from "components/Main";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { HomePage, PageRender } from 'pages'
+import AppThemeProvider from 'styles/AppThemeProvider'
 
-export function App() {
+function App() {
+
   return (
-    <Router>
-      <Switch>
-        <Route exact path="/">
-          <Main />
-        </Route>
-      </Switch>
-    </Router>
-  );
+    <AppThemeProvider>
+      <PageRender>
+        <HomePage />
+      </PageRender>
+    </AppThemeProvider>
+  )
 }
+
+export default App

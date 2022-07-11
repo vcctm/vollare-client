@@ -1,4 +1,4 @@
-import { OutlinedTextFieldProps, TextFieldProps } from '@mui/material'
+import { OutlinedTextFieldProps } from '@mui/material'
 import * as S from './styles'
 
 interface ITextInputProps extends OutlinedTextFieldProps{}
